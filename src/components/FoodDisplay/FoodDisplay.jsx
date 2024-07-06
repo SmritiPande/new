@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import "./FoodDisplay.css";
-import StoreContext from "../../context/StoreContext";
+import {StoreContext} from "../../context/StoreContext";
 import FoodItem from "../FoodItem/FoodItem";
 
 const FoodDisplay = () => {
-  const Food_list = useContext(StoreContext);
-
+  const {Food_list} = useContext(StoreContext);
+  console.log(Food_list);
   return (
     <div className="food-display" id="food-display">
       <h2>Top dishes near you</h2>
@@ -13,7 +13,7 @@ const FoodDisplay = () => {
         {Food_list.map((index, item) => {
           return (
             <FoodItem
-              key={index}
+              key={item.name+item.description}
               id={item._id}
               name={item.name}
               description={item.description}
