@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { Food_list } from "../assets/assets";
 
-export const StoreContext = createContext();
+const StoreContext = createContext();
 
 const StoreContextProvider = ({ children }) => {
   const contextValue = {
@@ -16,3 +16,4 @@ const StoreContextProvider = ({ children }) => {
 };
 
 export default StoreContextProvider;
+export {StoreContext};
