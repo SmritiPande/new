@@ -45,4 +45,8 @@ const StoreContextProvider = ({ children }) => {
 };
 
 export default StoreContextProvider;
+<<<<<<< HEAD
 export { StoreContext };
+=======
+export {StoreContext};
+>>>>>>> origin/main
