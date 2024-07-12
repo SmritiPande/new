@@ -19,35 +19,35 @@ export const menu_list = [
     menu_image: menu_1,
   },
   {
-    menu_name: "Salad",
+    menu_name: "Cake",
     menu_image: menu_1,
   },
   {
-    menu_name: "Rolls",
+    menu_name: "Pure Veg",
     menu_image: menu_1,
   },
   {
-    menu_name: "Desserts",
+    menu_name: "Pasta",
     menu_image: menu_1,
   },
   {
-    menu_name: "Sandwich",
+    menu_name: "Noodles",
     menu_image: menu_1,
   },
   {
-    menu_name: "Salad",
+    menu_name: "Pizza",
     menu_image: menu_1,
   },
   {
-    menu_name: "Salad",
+    menu_name: "Burger",
     menu_image: menu_1,
   },
   {
-    menu_name: "Salad",
+    menu_name: "French Fries",
     menu_image: menu_1,
   },
   {
-    menu_name: "Salad",
+    menu_name: "Paneer Tikka",
     menu_image: menu_1,
   },
 ];
@@ -55,27 +55,67 @@ export const menu_list = [
 export const Food_list = [
   {
     _id: 1,
-    name: "Greek salad",
+    name: "Greek Salad",
     image: food_1,
     price: 12,
+    rating: 4.5,
+    description:
+      "Food provides essential nutrinets for overall health and well-being",
+    category: "Salad",
+  },
+  {
+    _id: 2,
+    name: "Veg Salad",
+    image: food_1,
+    price: 11,
     rating: 4.5,
     description:
       "Food provides essential nutrinets for overall health and well-being",
     category: "salad",
   },
   {
-    _id: 2,
-    name: "Greek salad",
+    _id: 3,
+    name: "Clover Salad",
     image: food_1,
     price: 12,
     rating: 4.5,
     description:
       "Food provides essential nutrinets for overall health and well-being",
-    category: "mojito",
+    category: "Salad",
   },
   {
-    _id: 3,
-    name: "Greek salad",
+    _id: 4,
+    name: "Chicken Salad",
+    image: food_1,
+    price: 14,
+    rating: 4.5,
+    description:
+      "Food provides essential nutrinets for overall health and well-being",
+    category: "Salad",
+  },
+  {
+    _id: 5,
+    name: "Lasagna Rolls",
+    image: food_1,
+    price: 16,
+    rating: 4.5,
+    description:
+      "Food provides essential nutrinets for overall health and well-being",
+    category: "Rolls",
+  },
+  {
+    _id: 6,
+    name: "Peri Peri Rolls",
+    image: food_1,
+    price: 17,
+    rating: 4.5,
+    description:
+      "Food provides essential nutrinets for overall health and well-being",
+    category: "Rolls",
+  },
+  {
+    _id: 7,
+    name: "Greek Rolls",
     image: food_1,
     price: 12,
     rating: 4.5,
@@ -84,53 +124,53 @@ export const Food_list = [
     category: "rolls",
   },
   {
-    _id: 4,
-    name: "Greek salad",
-    image: food_1,
-    price: 12,
-    rating: 4.5,
-    description:
-      "Food provides essential nutrinets for overall health and well-being",
-    category: "cake",
-  },
-  {
-    _id: 5,
-    name: "Greek salad",
-    image: food_1,
-    price: 12,
-    rating: 4.5,
-    description:
-      "Food provides essential nutrinets for overall health and well-being",
-    category: "sandwich",
-  },
-  {
-    _id: 6,
-    name: "Greek salad",
-    image: food_1,
-    price: 12,
-    rating: 4.5,
-    description:
-      "Food provides essential nutrinets for overall health and well-being",
-    category: "coka-cola",
-  },
-  {
-    _id: 7,
-    name: "Greek salad",
-    image: food_1,
-    price: 12,
-    rating: 4.5,
-    description:
-      "Food provides essential nutrinets for overall health and well-being",
-    category: "sala",
-  },
-  {
     _id: 8,
-    name: "Greek salad",
+    name: "Dark Chocolate Cake",
     image: food_1,
     price: 12,
     rating: 4.5,
     description:
       "Food provides essential nutrinets for overall health and well-being",
-    category: "saladd",
+    category: "Cake",
+  },
+  {
+    _id: 9,
+    name: "Margherita Pizza",
+    image: food_1,
+    price: 12,
+    rating: 4.5,
+    description:
+      "Food provides essential nutrinets for overall health and well-being",
+    category: "Pizza",
+  },
+  {
+    _id: 10,
+    name: "Paneer Pizza",
+    image: food_1,
+    price: 12,
+    rating: 4.5,
+    description:
+      "Food provides essential nutrinets for overall health and well-being",
+    category: "Pizza",
+  },
+  {
+    _id: 11,
+    name: "Pack Burger",
+    image: food_1,
+    price: 12,
+    rating: 4.5,
+    description:
+      "Food provides essential nutrinets for overall health and well-being",
+    category: "Burger",
+  },
+  {
+    _id: 12,
+    name: "Fries",
+    image: food_1,
+    price: 12,
+    rating: 4.5,
+    description:
+      "Food provides essential nutrinets for overall health and well-being",
+    category: "French Fries",
   },
 ];

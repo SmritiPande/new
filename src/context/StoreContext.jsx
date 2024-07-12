@@ -1,11 +1,40 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import { Food_list } from "../assets/assets";
 
-export const StoreContext = createContext();
+const StoreContext = createContext();
 
 const StoreContextProvider = ({ children }) => {
+  const [cartItems, setCartItems] = useState({});
+
+  const addToCart = (itemId) => {
+    if (!cartItems[itemId]) {
+      setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
+    } else {
+      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    }
+  };
+
+  const removeFromCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+  };
+
+  const getTotalCartAmount = () => {
+    let totalAmount = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        let itemInfo = Food_list.find((product) => product._id === item);
+        totalAmount += itemInfo.price * cartItems[item];
+      }
+    }
+    return totalAmount;
+  };
   const contextValue = {
     Food_list,
+    cartItems,
+    setCartItems,
+    addToCart,
+    removeFromCart,
+    getTotalCartAmount,
   };
   console.log(contextValue);
   return (
@@ -16,3 +45,4 @@ const StoreContextProvider = ({ children }) => {
 };
 
 export default StoreContextProvider;
+export { StoreContext };

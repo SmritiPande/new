@@ -25,7 +25,8 @@
 }
 
 .explore-menu-list-item img {
-  width: 8.5vw;
+  width: 8.95vw;
+  height: 10.5vh;
   min-width: 80px;
   cursor: pointer;
   border-radius: 50%;
@@ -46,4 +47,10 @@
 .explore-menu-list-item .active {
   border: 3px solid tomato;
   padding: 2px;
+}
+@media (max-width: 1050px) {
+  .explore-menu-text {
+    max-width: 100%;
+    font-size: 14px;
+  }
 }
